@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/radiant-front/static/css/main.3fce5b83.css",
-    "main.js": "/radiant-front/static/js/main.355fe3fb.js",
+    "main.css": "/radiant-front/static/css/main.0cc5a155.css",
+    "main.js": "/radiant-front/static/js/main.648146e6.js",
     "static/js/453.8ebcf2f9.chunk.js": "/radiant-front/static/js/453.8ebcf2f9.chunk.js",
     "index.html": "/radiant-front/index.html",
-    "main.3fce5b83.css.map": "/radiant-front/static/css/main.3fce5b83.css.map",
-    "main.355fe3fb.js.map": "/radiant-front/static/js/main.355fe3fb.js.map",
+    "main.0cc5a155.css.map": "/radiant-front/static/css/main.0cc5a155.css.map",
+    "main.648146e6.js.map": "/radiant-front/static/js/main.648146e6.js.map",
     "453.8ebcf2f9.chunk.js.map": "/radiant-front/static/js/453.8ebcf2f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fce5b83.css",
-    "static/js/main.355fe3fb.js"
+    "static/css/main.0cc5a155.css",
+    "static/js/main.648146e6.js"
   ]
 }
