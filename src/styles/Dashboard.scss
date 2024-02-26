@@ -9,6 +9,13 @@ $large-font: 16px;
 $medium-line-height: 20px;
 $large-line-height: 22.8px;
 
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-lg-2: 1024px;
+$breakpoint-xl: 1200px;
+
 .base-dashboard {
   &__element {
     width: 1024px;
@@ -137,6 +144,7 @@ $large-line-height: 22.8px;
           font-weight: 400;
           line-height: 44px;
           font-family: Inter, Arial, sans-serif;
+          width: 500px;
         }
         div {
           input {
@@ -172,4 +180,124 @@ $large-line-height: 22.8px;
   }
 
 
+}
+
+@media  (max-width: $breakpoint-lg-2) {
+  .base-dashboard {
+    &__element {
+      width: 100%;
+      &__h1 {
+        font-size: 42px;
+        line-height: 50px;
+        text-align: center;
+      }
+
+      &__div {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      &__button, &__arrow {
+        margin-left: 20px;
+        ul {
+          flex-wrap: wrap;
+          justify-content: center;
+          li {
+            margin-bottom: 10px;
+            margin-right: 5px;
+          }
+        }
+      }
+      &__box {
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+      &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      h1 {
+          font-size: 24px;
+          margin-left: 20px;
+        }
+        &__div {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 20px;
+        }
+      }
+      &__contact {
+        &__headers {
+          flex-wrap: wrap;
+          justify-content: center;
+          h1 {
+            width: 100%;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media  (max-width: $breakpoint-md) {
+  .base-dashboard {
+    &__element {
+      width: 100%;
+      &__h1 {
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        padding: 10px;
+      }
+      &__div {
+        flex-wrap: wrap;
+        justify-content: center;
+        div {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media  (max-width: $breakpoint-sm) {
+  .base-dashboard {
+    &__element {
+      width: 100%;
+      &__h1 {
+        font-size: 23px;
+        line-height: 28px;
+        text-align: center;
+        padding: 10px 0;
+      }
+      &__card {
+        &__div {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        h1 {
+          font-size: 24px;
+          margin-left: 20px;
+        }
+      }
+      &__contact {
+        &__headers {
+          div {
+            margin-left: -20px;
+            input {
+              padding: 6px 8px;
+              width: 200px;
+            }
+            button {
+              font-size: 13px;
+              line-height: 18px;
+              padding: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

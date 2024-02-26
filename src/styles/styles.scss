@@ -1,5 +1,4 @@
 /* src/styles/styles.scss */
-
 $primary-color: #FBFCFD;
 $header-color: #2C384A;
 $text-color: #4B5665;
@@ -8,6 +7,12 @@ $medium-font: 14px;
 $large-font: 16px;
 $medium-line-height: 20px;
 $large-line-height: 22.8px;
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-lg-2: 1024px;
+$breakpoint-xl: 1200px;
 
 body {
   font-family: Inter, Arial, sans-serif;
@@ -19,6 +24,7 @@ body {
   color: $header-text;
   padding: 1rem;
 }
+
 .base-header {
   font-family: Inter, Arial, sans-serif;
   font-size: $medium-font;
@@ -36,6 +42,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     div {
       position: relative;
       span {
@@ -46,7 +53,6 @@ body {
         color: #626E79;
         width: 18.5px;
         height: 18.5px;
-
       }
     }
   }
@@ -75,11 +81,29 @@ body {
     margin-right: 10px;
     margin-left: 80px;
   }
-
   a {
     text-decoration: none;
     color: $header-text;
     line-height: $medium-line-height;
     font-weight: 400;
+  }
+}
+
+@media (max-width: $breakpoint-lg-2) {
+  .base-header {
+    height: 150px;
+    .base-header__element {
+      display: grid;
+
+      ul {
+        display: grid;
+        grid-template-columns: 1rf;
+        justify-content: flex-start;
+         li {
+           margin-top: 10px;
+
+         }
+      }
+    }
   }
 }

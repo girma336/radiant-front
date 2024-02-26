@@ -57,7 +57,7 @@ const Dashboard = () => {
                 </div>
                 <div className="base-dashboard__element__contact">
                     <div className="base-dashboard__element__contact__headers">
-                        <h1>Sign up and get exclusive<br/> special deals</h1>
+                        <h1>Sign up and get exclusive special deals</h1>
                         <div>
                             <input />
                             <button>Sinup</button>
